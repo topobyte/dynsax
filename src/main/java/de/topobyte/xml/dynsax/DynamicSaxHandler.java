@@ -29,7 +29,7 @@ public abstract class DynamicSaxHandler extends DefaultHandler
 	private Element root;
 	private boolean emitRoot;
 
-	private Stack<TreePosition> state = new Stack<TreePosition>();
+	private Stack<TreePosition> state = new Stack<>();
 
 	private class TreePosition
 	{

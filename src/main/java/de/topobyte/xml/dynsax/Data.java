@@ -37,9 +37,9 @@ public class Data
 		return element;
 	}
 
-	private Map<String, String> attributes = new HashMap<String, String>();
-	private Map<String, Data> singles = new HashMap<String, Data>();
-	private Map<String, List<Data>> lists = new HashMap<String, List<Data>>();
+	private Map<String, String> attributes = new HashMap<>();
+	private Map<String, Data> singles = new HashMap<>();
+	private Map<String, List<Data>> lists = new HashMap<>();
 	StringBuilder buffer = new StringBuilder();
 
 	void setSingle(String name, Data data)
@@ -51,7 +51,7 @@ public class Data
 	{
 		List<Data> list = lists.get(name);
 		if (list == null) {
-			list = new ArrayList<Data>();
+			list = new ArrayList<>();
 			lists.put(name, list);
 		}
 		list.add(data);

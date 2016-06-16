@@ -34,7 +34,7 @@ public class Element
 		this.hasText = hasText;
 	}
 
-	List<Child> children = new ArrayList<Child>();
+	List<Child> children = new ArrayList<>();
 
 	public void addChild(Child child)
 	{
@@ -51,7 +51,7 @@ public class Element
 		}
 	}
 
-	List<String> attributes = new ArrayList<String>();
+	List<String> attributes = new ArrayList<>();
 
 	public void addAttribute(String attribute)
 	{
